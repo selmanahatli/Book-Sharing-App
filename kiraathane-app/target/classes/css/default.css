@@ -1,0 +1,117 @@
+.tab-pane *.tab-header-area *.tab-header-background {
+  -fx-background-color:transparent;
+}
+
+.scroll-pane{
+   -fx-background-color:transparent;
+}
+
+.scroll-pane > .viewport {  //not .scrollpane but .scroll-pane
+   -fx-background-color: transparent;
+}
+
+.tab-pane {
+  -fx-tab-min-width:120px;
+  -fx-tab-max-width:120px;
+  -fx-tab-min-height:50px;
+  -fx-tab-max-height:50px;
+}
+
+.tab {
+  -fx-font-family: Arial;
+  -fx-font-size: 18;
+  -fx-background-color: #d4d4d4;
+  -fx-background-color:transparent;
+  -fx-background-radius: 200;
+}
+
+.tab:selected {
+    -fx-background-color:  rgba(165, 165, 165, 0.6) ;
+    -fx-focus-color: transparent;
+}
+
+.edit-tab-pane {
+  -fx-tab-min-width:80px;
+  -fx-tab-max-width:80px;
+  -fx-tab-min-height:20px;
+  -fx-tab-max-height:20px;
+}
+
+.edit-tab {
+  -fx-font-family: Arial;
+  -fx-font-size: 12;
+  -fx-background-color: #d4d4d4;
+  -fx-background-color:transparent;
+  -fx-background-radius: 200;
+  -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+/*.chart-legend-item{
+    -fx-text-fill: #78ebe7;
+}*/
+
+.axis-label {
+  -fx-text-fill: #ffffff;
+}
+
+.chart-title {
+  -fx-text-fill: #ffffff;
+  -fx-font-weight: bold;
+}
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.anchorpane_background {
+    -fx-background-color: rgba(165, 165, 165, 0.5);
+    -fx-background-radius: 10;
+}
+
+.anchorpane_send_message {
+  -fx-background-color: "#dcf7c6";
+  -fx-background-radius: 5 0 5 5;
+}
+
+.anchorpane_recv_message {
+  -fx-background-color: "#d4d4d4";
+  -fx-background-radius: 0 5 5 5;
+}
+
+.context-menu {
+  -fx-background-color: #bf6666;
+  -fx-text-fill: white;
+  -fx-padding: 0;
+}
+
+.context-menu:hover {
+  -fx-background-color: #bf6680;
+  -fx-text-fill: white;
+}
+
+.context-menu.auto-complete-menu {
+    -fx-background-color: #f4f4f4;
+    -fx-pref-width: 175px;
+    /*-fx-pref-height: 150px;*/
+    -fx-effect: dropshadow(gaussian, black, 0, 0, 0, 0);
+    -fx-border-color: #dbdbdb;
+    -fx-border-width: 1px;
+
+}
+
+.progress-bar .bar {
+    -fx-background-color: #ffa713;
+    -fx-background-insets: 0, 1, 2;
+    -fx-padding: 0.416667em;
+}
+
+.progress-indicator  {
+    -fx-progress-color: #ffa713;
+}

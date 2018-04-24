@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url('image/back.jpg');" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.grup11app.controller.loginPageController">
+    <children>
+
+              <Label fx:id="passwd" layoutX="575.0" layoutY="128.0" prefHeight="20.0" prefWidth="149.0" text="KAYIT FORMU" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+        <Label fx:id="username" layoutX="453.0" layoutY="167.0" prefHeight="20.0" prefWidth="149.0" text="Adı :" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+        <TextField fx:id="loginname" layoutX="453.0" layoutY="187.0" onAction="#onClick" text="" />
+        <Label fx:id="username1" layoutX="616.0" layoutY="159.0" prefHeight="20.0" prefWidth="149.0" text="Soyadı:" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+        <TextField fx:id="loginname1" layoutX="616.0" layoutY="187.0" onAction="#onClick" text="" />
+        <TextField fx:id="loginname11" layoutX="453.0" layoutY="259.0" onAction="#onClick" text="" />
+        <Label fx:id="username11" layoutX="453.0" layoutY="232.0" prefHeight="20.0" prefWidth="149.0" text="Kullanıcı Adı:" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+        <TextField fx:id="loginname112" layoutX="453.0" layoutY="327.0" onAction="#onClick" text="" />
+        <Label fx:id="username111" layoutX="453.0" layoutY="300.0" prefHeight="20.0" prefWidth="149.0" text="Şehir:" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+        <TextField fx:id="loginname111" layoutX="617.0" layoutY="327.0" onAction="#onClick" text="" />
+        <Label fx:id="username112" layoutX="617.0" layoutY="300.0" prefHeight="20.0" prefWidth="149.0" text="İlçe:" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+        <Label fx:id="username113" layoutX="453.0" layoutY="366.0" prefHeight="20.0" prefWidth="149.0" text="Parola:" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+        <TextField fx:id="loginname114" layoutX="617.0" layoutY="258.0" onAction="#onClick" text="" />
+        <Label fx:id="username114" layoutX="617.0" layoutY="231.0" prefHeight="20.0" prefWidth="149.0" text="E-posta:" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+      <Button layoutX="453.0" layoutY="454.0" mnemonicParsing="false" onMouseClicked="#btnBack" prefHeight="25.0" prefWidth="73.0" text="Geri Dön" />
+        <Label fx:id="username1131" layoutX="616.0" layoutY="366.0" prefHeight="20.0" prefWidth="149.0" text="Parola Doğrulama:" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+        <PasswordField layoutX="453.0" layoutY="392.0" />
+        <PasswordField layoutX="616.0" layoutY="392.0" />
+      <Button layoutX="693.0" layoutY="454.0" mnemonicParsing="false" onMouseClicked="#saveClick" prefHeight="25.0" prefWidth="73.0" text="Kaydet" />
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</Pane>

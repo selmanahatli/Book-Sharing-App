@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url('image/back.jpg');" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.grup11app.controller.loginPageController">
+    <children>
+        <ProgressBar fx:id="progressBarLoading" layoutX="480.0" layoutY="524.0" prefHeight="10" prefWidth="190" progress="0.0" />
+
+        <Label fx:id="passwd" layoutX="502.0" layoutY="436.0" prefHeight="20.0" prefWidth="149.0" text="Şifre :" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+        <Label fx:id="username" layoutX="502.0" layoutY="375.0" prefHeight="20.0" prefWidth="149.0" text="Kullanıcı Adı :" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </Label>
+      <TextField fx:id="loginname" layoutX="500.0" layoutY="400.0" onAction="#onClick" text="" />
+        <PasswordField fx:id="psword" layoutX="500.0" layoutY="460.0" onAction="#onClick" prefHeight="25.0" prefWidth="150.0" />
+        <ImageView fx:id="ivLogin" blendMode="DIFFERENCE" fitHeight="25.0" fitWidth="24.0" layoutX="625.0" layoutY="460.0" onMouseClicked="#onClick" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/button_login.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+      <Text fill="WHITE" layoutX="554.0" layoutY="506.0" onMouseClicked="#onClickRegister" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Kayıt ol" />
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</Pane>
